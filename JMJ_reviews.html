@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      
+   Base of the JMJ Manufacturing website
+   Author: jacob etheredge
+   Date:   11/15/25
+   
+   This is the base header and footer for all the JMJ web pages
+   Filename: JMJ_Base.html
+   -->
+   
+   <title>JMJ Manufacturing</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="JMJ_reset.css" rel="stylesheet" />
+   <!--<link href="JMJ_styles1.css" rel="stylesheet" />  -->
+   <link href="JMJ_core.css" rel="stylesheet" />
+   
+</head>
+
+<body>
+<div class="container">
+   <header class="header">
+	<div class="headerContent">
+      <a href="JMJ_home.html" class="logo">
+		<img class="logoImg" src="JMJ_logo.png" alt="JMJ Manufacturing" />
+	  </a>
+      <nav class="navigation">
+         <ul class="mainmenu">
+			
+            <li><a href="index.html" class="navLink">Home</a></li>
+            <li><a href="JMJ_services.html" class="navLink">Services Catalogue</a></li>
+			<li><a href="JMJ_quote.html" class="navLink">Get a Quote</a></li>
+			<li><a href="JMJ_reviews.html" class="navLink">Reviews</a></li>
+			<li><a href="JMJ_compInfo.html" class="navLink">Our Story</a></li>
+         </ul>
+      </nav>
+	 </div>
+   </header>
+   
+   <!-- -->
+   
+<head>
+    <style>
+        main {
+            padding-top: 30px; 
+            padding-bottom: 50px; 
+        }
+        
+        .pageTitle {
+            font-size: 3em; 
+            font-weight: bold;
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .newsArticle { 
+            width: calc(50% - 30px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .contentBox { 
+            display: inline-block;
+            text-align: left; 
+            width: 100%;
+            padding: 25px; 
+            background-color: #f4f4f4; 
+            border-radius: 12px;
+        }
+
+        .newsSummary {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .contentBox p {
+            font-size: 1.1em; 
+            line-height: 1.6; 
+            margin-bottom: 1em; 
+        }
+
+        .contentBox cite {
+            display: block;
+            font-size: 0.9em;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .video-wrapper video {
+            border-radius: 12px;
+        }
+        
+        .video-caption {
+            font-size: 1.1em;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+
+<main>
+	<section>
+		<header class="pageTitle"> Reviews From Our Valued Customers</header>
+		
+		<article class="newsArticle">
+            <div class="contentBox">
+                <header class="newsSummary">Pat K. (Prototyping Success)</header>
+                <p>
+                JMJ’s rapid response time made prototyping easy! We received high quality prints from JMJ that were well within spec. JMJ’s engineers helped us iterate on our designs and eventually reach a final product.
+                </p>
+                <cite>— Pat K.</cite>
+            </div>
+		</article>
+		
+		<article class="newsArticle">
+            <div class="contentBox">
+                <header class="newsSummary">Stanley K. (Quality Control)</header>
+                <p>
+                We appreciate the attention to detail and communication throughout the entire process. We weren't sure exactly what we needed, but Martin walked us through several initial designs and we were able to select lock in on precisely what we wanted.
+                </p>
+                <cite>— Stanley K.</cite>
+            </div>
+		</article>
+	
+		<article class="newsArticle">
+            <div class="contentBox">
+                <header class="newsSummary">Stephen S. (Complex Geometry)</header>
+                <p>
+                Their ability to handle complex geometry printing saved us weeks of development time. Jacob took our exacting requirements and was able to manufacture several several complex parts that fit with minimal adjustment.
+                </p>
+                <cite>— Stephen S.</cite>
+            </div>
+		</article>
+		
+		<article class="newsArticle">
+            <div class="contentBox">
+                <header class="newsSummary">Robert Z. (Timely Delivery)</header>
+                <p>
+                We had to go through a couple of redesigns as the customer requirments for our project kept changing. Justin was extremely patient and understanding. He managed to salvage much of the tooling schedule even after the significant changes.  
+                </p>
+                <cite>— Robert Z.</cite>
+            </div>
+		</article>
+		
+	</section>
+    
+    <div class="video-container">
+        <article>
+            <div class="video-wrapper">
+                <video width="800" controls>
+                    <source src="Recording-JMA.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="video-caption">Inspirational designs from our customers</p>
+        </article>
+    </div>
+</main>
+   
+   <!-- -->
+   
+   <footer class="footer">
+	
+		
+	<a href="https://youtu.be/08AzSgyUxFo?si=yhSazZediu2PeeHZ">Facebook</a></li>
+		&#8226
+	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Twitter/X</a></li>
+		</br>	
+	
+      <p>JMJ Manufacturing &#8226; 1145 W Wilson Ave, Chicago, IL 60640</p> 
+	  <p>This is a school project. All images belong to their respecitve copyright holders<p>
+   </footer>
+</div>   
+</body>
+</html>

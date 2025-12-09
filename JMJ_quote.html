@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      
+   The fillable form for getting a quote from JMJ of the JMJ Manufacturing website
+   Author: jacob etheredge
+   Date:   11/15/25
+   
+   
+   Filename: JMJ_Base.html
+   -->
+    <!-- -->
+
+    <title>JMJ Manufacturing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="JMJ_reset.css" rel="stylesheet" />
+    <link href="JMJ_core.css" rel="stylesheet" />
+    
+    <style>
+        main {
+            padding-top: 30px; 
+        }
+        
+        .pageTitle {
+            font-size: 3em; 
+            font-weight: bold;
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+
+        main article {
+            text-align: center;
+        }
+
+        #quoteForm {
+            display: inline-block;
+            text-align: left; 
+            max-width: 600px;
+            padding: 20px; 
+            background-color: #f4f4f4; 
+            border-radius: 8px;
+        }
+
+        #quoteForm label {
+            display: block;
+            text-align: left;
+            margin-top: 15px; 
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #quoteForm small {
+            display: block;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        #quoteForm input[type="text"],
+        #quoteForm input[type="email"],
+        #quoteForm input[type="tel"],
+        #quoteForm textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 0;
+        }
+        
+        br {
+            display: none;
+        }
+
+        #quoteForm button[type="submit"] {
+            margin-top: 25px;
+            font-weight: bold; 
+        }
+        
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('quoteForm');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                const nameInput = document.getElementById('name').value;
+                
+                if (nameInput === "") {
+                    alert("Please enter your name before submitting.");
+                    return; 
+                }
+                
+                alert("Thank you! Your quote request was received.");
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <div class="headerContent">
+            <a href="JMJ_home.html" class="logo">
+                <img class="logoImg" src="JMJ_logo.png" alt="JMJ Manufacturing" />
+            </a>
+            <nav class="navigation">
+                <ul class="mainmenu">
+                    
+                    <li><a href="index.html" class="navLink">Home</a></li>
+                    <li><a href="JMJ_services.html" class="navLink">Services Catalogue</a></li>
+                    <li><a href="JMJ_quote.html" class="navLink">**Get a Quote**</a></li>
+                    <li><a href="JMJ_reviews.html" class="navLink">Reviews</a></li>
+                    <li><a href="JMJ_compInfo.html" class="navLink">Our Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    
+    <main>
+        <section>
+            <header class="pageTitle">Get a Quote</header> 
+            <article>
+                
+                <form id="quoteForm" action="/submit-quote" method="POST" enctype="multipart/form-data">
+                    
+                    <p>Please fill out the form below to receive a custom manufacturing quote.</p>
+
+                    <label for="name">Full Name:*</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    
+                    <label for="email">Email Address:*</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="itemInfo">Item/Project Description:*</label>
+                    <textarea id="itemInfo" name="itemInfo" **rows="8"** required aria-required="true" placeholder="Provide details about the item you need manufactured, including dimensions, materials, quantity, and any special requirements."></textarea>
+                    
+                    <label for="fileUpload">Attach Design File/Blueprint (Optional):</label>
+                    <input type="file" id="fileUpload" name="designFile" accept=".pdf,.dxf,.step,.iges,.dwg">
+                    <small>Accepted file types: PDF, DXF, STEP, IGES, DWG.</small>
+                    
+                    <button type="submit">**Submit Quote Request**</button>
+                    
+                </form>
+
+            </article>
+            
+            <aside>
+                
+            </aside>
+        </section>
+    </main>
+    
+    
+    
+    <footer class="footer">
+        
+            
+        <a href="https://youtu.be/08AzSgyUxFo?si=yhSazZediu2PeeHZ">Facebook</a></li>
+            &#8226
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Twitter/X</a></li>
+            </br>   
+        
+        <p>JMJ Manufacturing &#8226; 1145 W Wilson Ave, Chicago, IL 60640</p>
+        <p>This is a school project. All images belong to their respecitve copyright holders<p>
+    </footer>
+</div>  
+</body>
+</html>

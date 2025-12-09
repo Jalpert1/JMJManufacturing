@@ -1,0 +1,136 @@
+charset "utf-8";
+
+/*
+     
+   Author:   jacob etheregde
+   Date:     11/15/25
+   
+   Filename: JMJ_styles1.css
+   
+   This file contains the layout styles used to basic format the background, headers, and footers of all pages for jmj
+
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+/* HTML and Body Styles */
+.
+html{
+	background-image: url(Background1.jpg);
+}
+/* i have no earthy idea why but i can't get the background image to load without this separate section*/
+html {
+   background: url(Background1.jpg) center center / cover no-repeat fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background-color: rgb(134, 176, 232);   
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   max-width: 1024px;
+   width: 100%;
+}
+/*Making sure that the footer is always at the bottom of the page, no matter the screen size*/
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Body Header Styles */
+
+.header {
+	background-color: rgb(15,75,166);
+}
+.headerContent{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	column-gap: 14px;
+	min-height: 100px;
+	margin-right: 40px;
+	
+}
+.logo{
+}
+
+.logoImg{
+	height: 100px;
+	display: block;
+}
+
+.navigation{
+}
+
+.mainmenu{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 10px;
+	
+}
+
+.navLink{
+	color: rgba(255,255,255,.75);
+	font-size: 1.7em;
+	transition: all 0.3s;
+	
+}
+
+.navLink:hover, .navLink:focus {
+	color: rgba(255,255,255,1);
+	font-size: 1.8em;
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 930px) {
+	
+.headerContent{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-right:0px;
+}
+
+.mainmenu{
+	display: flex;
+	flex-direction: column;
+	column-gap: 10px;
+}
+}
+/* Footer Styles */
+
+.footer {
+   background-color: rgb(15,75,166);
+   color: rgba(255,255,255,.75); 
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+   
+   
+  
+}
+
+.footer a{
+	color: rgba(255,255,255,.75);
+	font-size: 1em;
+	transition: all 0.3s;
+}
+.footer a:hover{
+	color: rgba(255,255,255,1);
+	font-size: 1.1em;
+	text-decoration: underline;
+}
