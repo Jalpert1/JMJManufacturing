@@ -99,6 +99,35 @@
             cursor: pointer;
             padding-bottom: 5px;
         }
+
+        .imgHolder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25px;
+            padding-top: 10px;
+            padding-bottom: 50px;
+        }
+
+        .bodyImg{
+            width: 350px;
+            height: 300px;
+            box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+            rgb(51, 51, 51) -5px 0px 15px;
+        }
+
+        @media only screen and (max-width: 930px) {
+            .bodyImg{
+                width: 250px;
+                height: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .imgHolder{
+                display: none;
+            }
+        }
         
     </style>
 </head>
@@ -124,6 +153,11 @@
 		</article>	
 	</section>
     
+        <div class="imgHolder">
+        <img class="bodyImg" src="FDM2.jpg" alt="" />
+        <img class="bodyImg" src="3D1.png" alt="" />
+        </div>
+
 	<section class="news">
 	<header class="newsHeader">News</header>
     
